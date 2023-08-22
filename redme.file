@@ -1,0 +1,31 @@
+1.Install the Live Server Extension:
+If you don't have the Live Server extension installed, you can do so by following these steps:
+
+Open VS Code.
+Go to the Extensions view by clicking on the square icon on the sidebar or pressing Ctrl + Shift + X.
+Search for "Live Server" and install the extension provided by "Ritwick Dey."
+Create an HTML File:
+Create an HTML file that includes the JavaScript code you want to execute. You can do this by following these steps:
+
+2.Create a new folder for your project and open it in VS Code.
+Open the index.html file and include a <script> tag that links to your JavaScript file. For example:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript in VS Code</title>
+</head>
+<body>
+    <h1>Hello, VS Code Live Server!</h1>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+3.Start Live Server:
+With the Live Server extension installed, you can start the server to see your HTML page and execute the JavaScript code. Here's how:
+
+Right-click anywhere in the HTML file.
+Select "Open with Live Server."
+This will open your HTML file in a browser tab, and you'll be able to see the output of your JavaScript code in the browser's console.
