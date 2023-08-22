@@ -11,7 +11,8 @@ class Playlist {
       if (index !== -1) {
         // Song is already in the playlist, remove it from its current position
         this.songs.splice(index, 1);
-      } else if (this.songs.length >= this.capacity) {
+      }
+      else if (this.songs.length >= this.capacity) {
         // Playlist is at capacity, remove the oldest song
         this.songs.shift();
       }
@@ -32,15 +33,17 @@ class Playlist {
   playlist.play('S1');
   playlist.play('S2');
   playlist.play('S3');
-  playlist.display(); 
+  playlist.display(); // Output: S1,S2,S3
   
   // User plays S4
   playlist.play('S4');
-  playlist.display(); 
+  playlist.display(); // Output: S2,S3,S4
+
+
   // User plays S2
   playlist.play('S2');
-  playlist.display(); 
+  playlist.display();  // Output: S3,S4,S2
   
   // User plays S1
   playlist.play('S1');
-  playlist.display(); 
+  playlist.display(); // Output: S4,S2,S1
